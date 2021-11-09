@@ -1,0 +1,101 @@
+{%load  static %}
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+<title> {% block titulo %} Piso {% endblock %} </title>
+ <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="{% static 'core/plugins/fontawesome-free/css/all.min.css' %}">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="{% static 'core/plugins/css/OverlayScrollbars.min.css' %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'core/dist/css/adminlte.min.css' %}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+
+<div class="wrapper">
+
+	<!-- AQUI LA CAVECERA DE LA PAGINA -->	
+	{% include "core/navbar.html" %}
+	{% block cabecera %} 
+	{% endblock %}
+     <!-- AQUI LA Barra lateral de Navegacion -->
+	 {% include "core/navegacion.html"%}
+	
+	
+	<!-- AQUI El contenido principal DE LA PAGINA -->
+	<div class="content-wrapper">
+
+	    <section class="content-header">
+	      <div class="container-fluid">
+	        <div class="row mb-2">
+	          <div class="col-sm-6">
+	           
+	          </div>
+	          <div class="col-sm-9">
+					
+	           </div>
+	        </div>
+
+
+
+
+
+
+
+
+	      </div><!-- /.container-fluid -->
+	    </section>
+
+
+    <!-- Main content -->
+	    
+	    <!-- /.content -->
+
+
+
+
+
+
+		
+
+
+
+    	<!-- AQUI LA El Pie DE LA PAGINA -->
+		
+    </div> 
+
+
+
+
+</div>
+<!-- ./wrapper -->
+
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="{% static 'core/plugins/jquery/jquery.min.js'%}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'core/plugins/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+<!-- overlayScrollbars -->
+<script src="{% static 'core/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js'%}"></script>
+<!-- AdminLTE App -->
+<script src="{% static 'core/dist/js/adminlte.js'%}"></script>
+
+<script src="{% static 'core/plugins/chart.js/Chart.min.js' %}"></script>
+
+<!-- PAGE PLUGINS -->
+ {%block scriptjs %}
+
+ {% endblock %}
+
+
+</body>
+
+</html> 
